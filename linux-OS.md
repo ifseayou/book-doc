@@ -1,10 +1,14 @@
 # 趣谈Linux操作系统
 
-
+![](img/lx/inx2.png)
 
 ##### 将操作系统当成一家软件外包公司，Linux内核当成一家软件外包公司的老板
 
-计算机的架构：
+锦上云科技有限公司   Linux操作系统；
+
+老板			      Linux 内核
+
+**计算机的架构：**
 
 ![](img/lx/a1.png)
 
@@ -30,18 +34,18 @@
 drwxr-xr-x 1 isea_you 197121    0 11月 21 17:53 clitoris-algo/
 # 文件/文件夹  所属人，所属组，其他用户的权限
 # 硬连接数量
-# 所属人 所属组，文件大小，最后一次修改的时间，文件名
+# 所属人 所属组，文件大小（字节），最后一次修改的时间，文件名
 ~~~
 
 ##### Linux下的软件安装
 
 就CentOS而言，软件的安装有几种方式：
 
-| 方式       | 命令                                    | 说明                                                   |
-| ---------- | --------------------------------------- | ------------------------------------------------------ |
-| 下载安装包 | `rpm -i jdk-XXX_linux-x64_bin.rpm`      | 先下载rpm包<br>使用`rmp`命令安装                       |
-| 软件管家   | `yum install java-11-openjdk.x86_64`    | 配置好yum源<br>使用yum命令安装                         |
-| 下载解压缩 | `tar xvzf jdk-XXX_linux-x64_bin.tar.gz` | 先下载tar.gz包<br>使用tar命令安装<br>修改`.bashrc`文件 |
+| 方式       | 命令                                     | 说明                                                   |
+| ---------- | ---------------------------------------- | ------------------------------------------------------ |
+| 下载安装包 | `rpm -i jdk-XXX_linux-x64_bin.rpm`       | 先下载rpm包<br>使用`rmp`命令安装                       |
+| 软件管家   | `yum install java-11-openjdk.x86_64`     | 配置好yum源<br>使用yum命令安装                         |
+| 下载解压缩 | `tar -xvzf jdk-XXX_linux-x64_bin.tar.gz` | 先下载tar.gz包<br>使用tar命令安装<br>修改`.bashrc`文件 |
 
 ##### Linux下载
 
@@ -69,6 +73,8 @@ yum install zip.x86_64 unzip.x86_64
 
 ~~~shell
 ps -ef |grep 关键字  |awk '{print $2}'|xargs kill -9
+
+jps -l | grep pyd-electrician-app-0.0.1-SNAPSHOT.jar | awk '{print $2}' | xargs kill -9
 ~~~
 
 ##### 简图
